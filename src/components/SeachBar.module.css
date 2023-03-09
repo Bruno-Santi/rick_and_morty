@@ -1,0 +1,22 @@
+.input { font-size:16px; 
+    border-width:2px; 
+    border-style:solid; 
+    padding:7px; 
+    text-align:center; 
+    box-shadow: 1px 0px 8px 0px rgba(51,214,36,.91); 
+    border-color:#996a99;  
+    margin-top: 20px;
+    background-color: #a2a8d3;
+    
+}
+
+.input:focus { outline:none; } 
+
+.agregar {
+    padding:7px; 
+    text-align:center; 
+    box-shadow: 1px 0px 8px 0px rgba(51,214,36,.91); 
+    border-color:#996a99; 
+    background-color: #a2a8d3;
+    color: beige;
+}

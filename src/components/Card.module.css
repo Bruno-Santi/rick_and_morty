@@ -1,0 +1,90 @@
+@font-face {
+    font-family: RickMorty;
+    src: url('../fonts/rymfont.ttf');
+}
+
+@font-face {
+    font-family: Conforta;
+    src: url('../fonts/conforta.ttf');
+}
+
+.contenedor {
+    display: inline-block;
+    margin: 15px;
+    border: 5px solid #14101080;
+    font-family: 'Conforta';
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    color: white;
+    
+}
+
+.img {
+    margin: 10px;
+    border-radius: 15px;
+    filter: grayscale(120%);
+}
+
+
+.myButton {
+	box-shadow:inset 0px 0px 7px 0px #a2a8d3;
+	background-color:#a2a8d3;
+	border-radius:9px;
+	border:3px solid #74b807;
+	display: flexbox;
+    margin-left: 15em;
+    margin-bottom: -20px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:8px 11px;
+    display: block;
+    margin-top: 10px;
+	text-decoration:none;
+	text-shadow:0px -1px 22px #528009;
+}
+.myButton:hover {
+	background-color:#77a809;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+@keyframes quitarfiltro {
+    0%{
+        filter: grayscale(120%);
+    }
+    20%{
+        filter: grayscale(100%);
+    }
+    40%{
+        filter: grayscale(80%);
+    }
+    60%{
+        filter: grayscale(60%);
+    }
+    80%{
+        filter: grayscale(40%);
+    }
+    100% {
+        filter: grayscale(15%);
+    }
+}
+
+
+.img:hover {
+    animation: quitarfiltro 1s forwards;
+
+} 
+
+.name {
+    font-family: 'Conforta';
+    font-size: 35px;
+    font-display:inherit;
+    
+   
+}

@@ -1,16 +1,19 @@
 //import characters from "../data";
+import style from "./Card.module.css";
+export default function Card({ name, species, gender, image, onClose, id }) {
+  return (
+    <>
+      <div className={style.contenedor}>
+        <button className={style.myButton} onClick={() => onClose(id)}>
+          {" "}
+          X{" "}
+        </button>
+        <h2 className={style.name}>{name}</h2>
 
-export default function Card(props) {
-   return (
-      <>
-      <div style={{display: "inline-block", padding:'15px'}}>
-         <button onClick = {() => window.alert('Emulamos que se cierra la card')}> X </button>
-         <h2>{props.name}</h2>
-         <h2>{props.species}</h2>
-         <h2>{props.gender}</h2>
-         <img props='{props.name}' src={props.image} alt="" /> 
-
+        <img className={style.img} src={image} alt="" />
+        <h2>Species: {species}</h2>
+        <h2>Gender: {gender}</h2>
       </div>
-      </>
-   );
+    </>
+  );
 }
