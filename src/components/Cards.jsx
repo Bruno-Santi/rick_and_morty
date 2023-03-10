@@ -16,7 +16,8 @@ export default function Cards({characters, onClose}) {
             image={image}
             onClose={onClose}
           />
-        ); 
+          
+        ) ; 
       })}
     </div>
   );
